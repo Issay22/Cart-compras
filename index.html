@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <h1 class="titulo">Postres</h1>
+
+        <div class="carrito" id="carritoPag">
+            <p>Artículos en el carrito: <span id="numero-items">0</span></p>
+        </div>
+    
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+</header>
+    
+    <main>
+      
+      <button id="boton-carrito" type="button" class="boton">
+        <span id="mostrar-ocultar-carrito">Mostrar</span> Carrito
+      </button>
+
+      <!-- Contenedor del carrito -->
+      <div id="contenedor-carrito">
+        <button class="boton" id="boton-limpiar-carrito">Limpiar Carrito</button>
+        <div id="contenedor-productos"></div>
+        <div id="resumen-compra">
+            <p>Número total de artículos: <span id="total-items">0</span></p>
+            <p>Subtotal: <span id="subtotal">$0</span></p>
+            <p>Total: <span id="total">$0</span> MXN</p>
+        </div>
+      </div>
+      
+      <div id="contenedor-tarjetas"></div>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
